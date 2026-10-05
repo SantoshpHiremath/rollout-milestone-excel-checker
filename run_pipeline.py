@@ -40,9 +40,9 @@ def main():
 
     print("\n" + "=" * 70)
     print("Hinweis: Die Rollout-Daten sind synthetisch (siehe README), da")
-    print("keine echten 1&1-Daten in dieser Umgebung verfügbar sind. Die")
+    print("keine echten Daten in dieser Umgebung verfügbar sind. Die")
     print("Meilenstein-Struktur und Anforderungslogik orientieren sich")
-    print("direkt an der Aufgabenbeschreibung dieser Ausschreibung.")
+    print("an typischen Rollout-Projekten.")
     print("=" * 70)
 
 

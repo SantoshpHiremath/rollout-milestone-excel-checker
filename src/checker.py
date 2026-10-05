@@ -3,9 +3,8 @@ Milestone/requirement automation checker.
 
 Reads the two real Excel workbooks (rollout_sites.xlsx,
 milestone_requirements.xlsx) with pandas/openpyxl and runs the
-automated checks the posting explicitly describes:
-"Entwicklung und Implementierung von Automatisierungen zur Prüfung von
-Meilensteinen und Projektanforderungen".
+automated checks of milestones and project
+requirements.
 
 Four real, independently useful checks:
   1. out-of-order milestones (a later milestone dated before its
@@ -81,8 +80,8 @@ def find_out_of_order_milestones(sites_df, requirements_df):
 def find_sla_breaches(sites_df, requirements_df):
     """
     Flag sites where the gap between a milestone and its prerequisite
-    exceeds the requirement sheet's max_gap_days -- the "Prüfung von
-    ... Projektanforderungen" the posting names directly.
+    exceeds the requirement sheet's max_gap_days -- the check of milestones against
+    project requirements.
     """
     issues = []
     for _, req in requirements_df.iterrows():

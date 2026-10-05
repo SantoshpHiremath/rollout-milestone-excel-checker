@@ -1,12 +1,10 @@
 """
 Synthetic mobile-network rollout data generator.
 
-Disclosure: no real 1&1 rollout data exists or is claimed here. This
-generates two realistically-shaped Excel workbooks modeled on the
-posting's own description ("Analyse und Vergleich großer
-Excel-Datenbestände (z. B. Vertrags-, Termin- und Projektdaten)" and
-"Automatisierungen zur Prüfung von Meilensteinen und
-Projektanforderungen"):
+Note: no real rollout data is used here. This
+generates two realistically-shaped Excel workbooks modeling large Excel
+datasets (contract, schedule, and project data) and the automated
+checking of milestones and project requirements:
 
 1. rollout_sites.xlsx -- a site/project tracker: one row per mobile-
    network rollout site, its current milestone stage, planned and
@@ -14,12 +12,12 @@ Projektanforderungen"):
 2. milestone_requirements.xlsx -- the requirement definition sheet:
    for each milestone stage, which prerequisite milestone must already
    be complete and the maximum allowed number of days between them
-   (an SLA-style requirement) -- exactly the kind of "Projekt-
-   anforderungen" the posting names.
+   (an SLA-style requirement) -- exactly the kind of project
+   requirements such a rollout tracks.
 
 Both are written as real .xlsx files (via openpyxl), not just
 DataFrames, so the downstream checker genuinely reads and compares
-Excel workbooks, matching the JD's explicit ask.
+Excel workbooks.
 """
 
 import random

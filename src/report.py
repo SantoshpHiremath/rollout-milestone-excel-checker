@@ -1,7 +1,6 @@
 """
 Writes the checker's results into a real, formatted Excel report --
-the "Erstellung, Optimierung und Weiterentwicklung ... von Reports und
-Kennzahlen" ask from the posting -- with one sheet per issue type plus
+reports and key figures for the milestone checks -- with one sheet per issue type plus
 a summary sheet with headline counts.
 """
 
